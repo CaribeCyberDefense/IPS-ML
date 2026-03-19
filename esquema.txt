@@ -1,0 +1,28 @@
+[ Tráfico de Red ]
+        ↓
+[ Sensor (Scapy) ]
+        ↓
+[ Feature Extractor ]
+        ↓
+[ ML Engine (Anomaly Detection) ]
+        ↓
+[ Rule Engine (Snort-like) ]
+        ↓
+[ Decision Engine ]
+        ↓
+   ├── Alert → Dashboard (WebSockets)
+   └──  Block → Firewall (IPS)
+
+Stack tecnológico:
+
+Captura: Scapy
+
+ML: Scikit-learn
+
+Backend: Flask + SocketIO
+
+Dashboard: estilo Kibana
+
+Visualización: Chart.js
+
+Respuesta: iptables / firewall
